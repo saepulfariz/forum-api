@@ -29,6 +29,13 @@ const createServer = async (container) => {
         value: 'Test welcome',
       }),
     },
+    {
+      method: 'GET',
+      path: '/hello',
+      handler: () => ({
+        value: 'Hello world!',
+      }),
+    },
   ]);
 
   // external plugins
